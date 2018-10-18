@@ -1,0 +1,31 @@
+.TH "TERMICODER CODE" "1" "14-Oct-2018" "0.3.0" "termicoder code Manual"
+.SH NAME
+termicoder\-code \- Creates and opens file with template code.
+.SH SYNOPSIS
+.B termicoder code
+[OPTIONS] [CODE_FILE]
+.SH DESCRIPTION
+Creates and opens CODE_FILE with template code.
+.PP
+If CODE_FILE already exists, 'code' just opens it in the default
+default/supplied editor without any change.
+.PP
+If CODE_FILE is not passed, a default name of file is suggested
+based on current directory, language preferences and existing
+files in directory.
+.PP
+Default CODE_FILE is <PROBLEM_NAME>.<DEFAULT_EXTENSION> if user is
+in a problem folder and no other supported code file exists.
+.PP
+TODO [WIP]:
+If other code file(s) exist, it should suggests to open the most
+recently edited one.
+.PP
+Template for the code is loaded based upon extension.
+.PP
+See 'termicoder config' for editing default templates,
+editor, and language preferences.
+.SH OPTIONS
+.TP
+\fB\-\-editor\fP TEXT
+Specify the editor to launch the file with.

@@ -1,0 +1,23 @@
+.TH "TERMICODER TEST" "1" "14-Oct-2018" "0.3.0" "termicoder test Manual"
+.SH NAME
+termicoder\-test \- Test code against the sample testcases.
+.SH SYNOPSIS
+.B termicoder test
+[OPTIONS] [CODE_FILE]
+.SH DESCRIPTION
+Test code against the sample testcases.
+.PP
+
+this command (compiles and) runs passed code file.
+the code is run against all [.in] files in ./testcases folder.
+the output is produced in [.out] files and checked against [.ans] files
+.PP
+it displays time for each testcase,status
+and diff of expected and produced outputs.
+.SH OPTIONS
+.TP
+\fB\-tl,\fP \-\-timelimit FLOAT
+the max time per testcase
+.TP
+\fB\-l,\fP \-\-live
+test the code live and don't use testcases
