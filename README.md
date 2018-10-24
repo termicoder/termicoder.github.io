@@ -134,6 +134,10 @@ You can also contribute otherwise by
 - Giving feedback about the work. (both praise and criticism are equally appreciated).
   - mail : diveshuttamchandani@gmail.com
 
+## Special Thanks to Contributors:
+- [@apb7](https://github.com/apb7)
+- [@twitu](https://github.com/twitu)
+
 ## LICENSE
 
 [MIT](LICENSE.txt)
